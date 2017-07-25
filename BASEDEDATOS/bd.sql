@@ -1,4 +1,4 @@
-DROP DATABASE AgendaCool;
+
 CREATE DATABASE AgendaCool;
 USE AgendaCool;
 
@@ -235,7 +235,7 @@ CREATE TRIGGER TG_ModificarUsuario
     FOR EACH ROW   
 BEGIN
     INSERT INTO Historial(historial_usuario, historial_fecha, historial_detalle)
-		VALUES (OLD.usuario_id, now(), 'Se ha modifico el nombre de usuario y/o contraseña');
+		VALUES (OLD.usuario_id, now(), 'Se ha modifico el nombre de usuario y/o contraseÃ±a');
 END$$
 DELIMITER ;
 
